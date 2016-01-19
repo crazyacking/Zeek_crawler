@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>博客园 - 开发者的网上家园</title>
+    <meta name="keywords" content="开发者,博客园,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,技术社区" />        <meta name="description" content="博客园是一个面向开发者的知识分享社区。自创建以来，博客园一直致力并专注于为开发者打造一个纯净的技术交流社区，推动并帮助开发者通过互联网分享知识，从而让更多开发者从中受益。博客园的使命是帮助开发者用代码改变世界。" />    <link rel="shortcut icon" href="http://static.cnblogs.com/favicon.ico" type="image/x-icon" />
+    <link rel="Stylesheet" type="text/css" href="/bundles/aggsite.css?v=6PPBl9N2xCkI__qDGVhEw4qjrbDASOg_74GSWWxhAjg1" />
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://feed.cnblogs.com/blog/sitehome/rss" />    <script src="http://common.cnblogs.com/script/jquery.js" type="text/javascript"></script>
+    <script src="/bundles/aggsite.js?v=amsrniXLMsyBDgk16j7rdUMyhPINtnVzYe2PzRDOUwo1" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="hd_info">
+            <div id="cnts">
+                <div id="site_nav_top">代码改变世界</div>
+                <div id="login_area"><span id="span_userinfo"></span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="header">
+            <p class="h_r_3"></p><p class="h_r_2"></p><p class="h_r_1"></p>
+            <div id="header_block">
+                <div id="logo">
+                    <h1>
+                        <a href="http://www.cnblogs.com/" title="开发者的网上家园"><img src="http://www.cnblogs.com/images/logo_small.gif" alt="博客园Logo" width="142" height="55" /></a>
+                    </h1>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <p class="h_r_1"></p><p class="h_r_2"></p><p class="h_r_3"></p>
+        </div>
+        <div id="nav_menu"><a href="http://home.cnblogs.com/">园子</a><a href="http://news.cnblogs.com">新闻</a><a href="http://q.cnblogs.com/">博问</a><a href="http://ing.cnblogs.com/">闪存</a><a href="http://group.cnblogs.com/">小组</a><a href="http://wz.cnblogs.com/">收藏</a><a href="http://job.cnblogs.com/">招聘</a><a href="http://kb.cnblogs.com/">知识库</a><a href="http://zzk.cnblogs.com/">找找看</a></div>
+        <div id="main">
+            <div class="post_nav_block_wrapper">
+                <ul class="post_nav_block">
+                        <li><a href="/"  class="current_nav" >首页</a></li>
+                        <li><a href="/pick/"   title="编辑精选博文">精华</a></li>
+                        <li><a href="/candidate/"   title="候选区的博文">候选</a></li>
+                        <li><a href="/news/"   title="新闻频道最新新闻">新闻</a></li>
+                        <li><a href="/following"   title="我关注博客的最新博文">关注</a></li>
+                        <li><a href="/aggsite/mycommented"   title="我评论过的博文">我评</a></li>
+                        <li><a href="/aggsite/mydigged"   title="我推荐过的博文">我赞</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="rss_link" id="rss_block">
+<span id="posts_refresh_tips"></span><a id="posts_refresh" href="#" class="refresh" title="刷新博文列表" onclick="aggSite.loadCategoryPostList();return false">刷新</a>                <a href="http://feed.cnblogs.com/blog/sitehome/rss"><img src="http://static.cnblogs.com/images/icon_rss.gif" alt="点击订阅" style="position:relative;top:2px;" title="订阅博客园文章" /></a>            </div>
+                <div id="headline_block" class="headline"><ul><li class="editor_pick"><a href="http://www.cnblogs.com/zichi/p/5135636.html" id="editor_pick_lnk" target="_blank">【编辑推荐】中文乱码？不，是 HTML 实体编码！<span id="editor_pick_count"></span></a> <a href="/aggsite/headline" title="查看更多编辑推荐" class="right_more">»</a></li><li><a href="http://www.cnblogs.com/watermoon2/p/5138471.html" target="_blank" title="阅读4334, 评论31, 推荐48">[最多推荐]我们终将成为我们嘲笑的人(31/4334)</a> <a href="/aggsite/topdigged24h" title="查看24小时推荐排行" class="right_more">»</a></li><li><a href="http://www.cnblogs.com/mantgh/p/5139072.html" target="_blank" title="阅读1940, 评论17, 推荐8">[最多评论]致菜鸟、新手、初学者以及我(17/1940)</a> <a href="/aggsite/topcommented24h" title="查看24小时评论排行" class="right_more">»</a></li><li><a href="http://news.cnblogs.com/n/537172/" target="_blank" title="阅读686, 评论7, 推荐6">[新闻头条]谈谈Model S的设计失误与Model X的车门及Autopilot(7/686)</a> <a href="http://news.cnblogs.com/" title="查看更多新闻" class="right_more">»</a></li><li><a href="http://news.cnblogs.com/n/537190/" target="_blank" title="阅读643, 评论2, 推荐1">[推荐新闻]牛人为《我的世界》造出BASIC编译器(2/643)</a> <a href="http://news.cnblogs.com/n/recommend" title="查看更多推荐新闻" class="right_more">»</a></li></ul></div>
+            <div id="pager_top" style="display:none"></div>
+            <div id="post_list_tips" class="hide"></div>
+            
+            <div id="post_list">
+                
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('younghao',5126408,250453,1)"> 
+	<span class="diggnum" id="digg_count_5126408">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5126408" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/younghao/p/5126408.html" target="_blank">Android线程管理&mdash;&mdash;ActivityThread</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/younghao/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/826785/20151023151410.png" alt=""/></a>    线程通信、ActivityThread及Thread类是理解Android线程管理的关键。 线程，作为CPU调度资源的基本单位，在Android等针对嵌入式设备的操作系统中，有着非常重要和基础的作用。本小节主要从以下三个方面进行分析： 《Android线程管理——线程通信》 《Android线程管理... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/younghao/" class="lightblue">yh_thu</a> 
+    发布于 2016-01-19 09:19 
+    <span class="article_comment"><a href="http://www.cnblogs.com/younghao/p/5126408.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/younghao/p/5126408.html" class="gray">阅读(6)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('sall',5136653,256836,1)"> 
+	<span class="diggnum" id="digg_count_5136653">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5136653" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/sall/p/5136653.html" target="_blank">微信支付开发-Senparc.Weixin.MP详解</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/sall/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/643132/20151210175211.png" alt=""/></a>    年底了，反而工作更忙了，我从15年11月开始写《1024伐木累》系列小说和爆笑对白，得到了很多身边的技术好友的支持，现在爆笑对白已经有越来越多的朋友一起帮着写段子，整理，包括小说内容的编辑工作等。虽然《1024伐木累》得到的褒贬不一，但是，对我来说，坚持的过程还是快乐的。我一直有一个愿望，也愿意..... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/sall/" class="lightblue">ITIBB-Shrek</a> 
+    发布于 2016-01-19 09:07 
+    <span class="article_comment"><a href="http://www.cnblogs.com/sall/p/5136653.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/sall/p/5136653.html" class="gray">阅读(112)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('zery',5132065,107588,1)"> 
+	<span class="diggnum" id="digg_count_5132065">3</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5132065" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/zery/p/5132065.html" target="_blank">让数据决策你的行为--拉勾网数据分析</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/zery/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/366784/20130905143458.png" alt=""/></a>    我们每天都在产生数据，出行，社交，购物，吃饭 等等，每一个行为伴随着数据的产生，如果将这些数据收集起来，并加以处理分析便可以反过来影响你的行为。 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/zery/" class="lightblue">Zery</a> 
+    发布于 2016-01-19 08:38 
+    <span class="article_comment"><a href="http://www.cnblogs.com/zery/p/5132065.html#commentform" title="2016-01-19 09:10" class="gray">
+        评论(4)</a></span><span class="article_view"><a href="http://www.cnblogs.com/zery/p/5132065.html" class="gray">阅读(281)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('andrew-chen',5099957,206668,1)"> 
+	<span class="diggnum" id="digg_count_5099957">2</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5099957" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/andrew-chen/p/5099957.html" target="_blank">Bosch 英语面试准备分享</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/andrew-chen/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/690404/20150113114125.png" alt=""/></a>    上周从一个朋友那里了解到长沙一家德国外企Bosch在招人，看了下只有MES工程师是对编程经验有要求的，抱着试一试的态度，就投了简历。没想到对方周一就给我回电话，希望我好好准备一下英语面试，过段时间去面试。留给我的时间不多，我得赶快冷静下来想想。为什么要选择这份工作？虽然跟我现在所学的并不完全相关，但... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/andrew-chen/" class="lightblue">chy996633</a> 
+    发布于 2016-01-19 08:31 
+    <span class="article_comment"><a href="http://www.cnblogs.com/andrew-chen/p/5099957.html#commentform" title="2016-01-19 09:06" class="gray">
+        评论(2)</a></span><span class="article_view"><a href="http://www.cnblogs.com/andrew-chen/p/5099957.html" class="gray">阅读(174)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('zichi',5141044,199121,1)"> 
+	<span class="diggnum" id="digg_count_5141044">1</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5141044" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/zichi/p/5141044.html" target="_blank">canvas中的碰撞检测笔记</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/zichi/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/675542/20150612173854.png" alt=""/></a>    用 canvas 做小游戏或者特效，碰撞检测是少不了的。本文将会涉及普通的碰撞检测，以及像素级的碰撞检测。（本文的碰撞检测均以 矩形 为例） 普通碰撞检测 普通的矩形碰撞检测比较简单。即已知两个矩形的各顶点坐标，判断是否相交，如相交，则为碰撞。leetcode 有道题是给出两个矩形的坐标，求其相交.... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/zichi/" class="lightblue">韩子迟</a> 
+    发布于 2016-01-19 08:29 
+    <span class="article_comment"><a href="http://www.cnblogs.com/zichi/p/5141044.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/zichi/p/5141044.html" class="gray">阅读(81)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('etoah',5140650,173591,1)"> 
+	<span class="diggnum" id="digg_count_5140650">5</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140650" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/etoah/p/5140650.html" target="_blank">图片上传插件ImgUploadJS：用HTML5 File API 实现截图粘贴上传、拖拽上传</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/etoah/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/585323/20150209201735.png" alt=""/></a>    一 . 背景及效果
+当前互联网上传文件最多的就是图片文件了，但是传统web图片的截图上传需要：截图保存 选择路径 保存后再点击上传 选择路径 上传 插入。 图片文件上传也需要：选择路径再 上传 插入，步骤繁杂，互联网体验为王，如果支持截图粘贴上传、拖拽上传将大大提升体验。 当前知乎和githu... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/etoah/" class="lightblue">段隆贤</a> 
+    发布于 2016-01-19 08:11 
+    <span class="article_comment"><a href="http://www.cnblogs.com/etoah/p/5140650.html#commentform" title="2016-01-19 08:57" class="gray">
+        评论(1)</a></span><span class="article_view"><a href="http://www.cnblogs.com/etoah/p/5140650.html" class="gray">阅读(222)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('hongyin163',5136021,35228,1)"> 
+	<span class="diggnum" id="digg_count_5136021">2</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5136021" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/hongyin163/p/react-voise.html" target="_blank">慢牛系列五：用百度语音识别添加自选股</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/hongyin163/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/31670/20151008165919.png" alt=""/></a>    开发慢牛股票app已经有很长一段时间，最近在考虑用什么方式添加自选股最方便，传统的做法是为用户专门开发一个键盘，字母或者数字的，帮助用户录入股票的简称或者编码，本文尝试用语音识别技术添加自选股，采用的是百度语音SDK，提供示例APK下载。 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/hongyin163/" class="lightblue">OOLi</a> 
+    发布于 2016-01-19 05:43 
+    <span class="article_comment"><a href="http://www.cnblogs.com/hongyin163/p/react-voise.html#commentform" title="2016-01-19 08:33" class="gray">
+        评论(1)</a></span><span class="article_view"><a href="http://www.cnblogs.com/hongyin163/p/react-voise.html" class="gray">阅读(164)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('batsing',5135508,201599,1)"> 
+	<span class="diggnum" id="digg_count_5135508">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5135508" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/batsing/p/5135508.html" target="_blank">多媒体文件格式全解说（下）－－图片</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/batsing/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/681503/20141018114352.png" alt=""/></a>    图片－点阵图：jpg、png、gif、bmp、ico、tif(tiff)、psd/psb、WebP、RAW、pdf、DCM、sai/rifJPG是使用最广泛的一种图片格式，色彩丰富，压缩比高，特别适合存储照片。但由于它采用的是有损压缩而且压缩程度太高，并不太适合于打印出版。而且放大很容易看到模糊，而... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/batsing/" class="lightblue">batsing</a> 
+    发布于 2016-01-19 03:29 
+    <span class="article_comment"><a href="http://www.cnblogs.com/batsing/p/5135508.html#commentform" title="2016-01-19 06:00" class="gray">
+        评论(1)</a></span><span class="article_view"><a href="http://www.cnblogs.com/batsing/p/5135508.html" class="gray">阅读(63)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('tracylin',5137980,260595,1)"> 
+	<span class="diggnum" id="digg_count_5137980">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5137980" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/tracylin/p/5137980.html" target="_blank">浏览器环境下JavaScript脚本加载与执行探析之动态脚本与Ajax脚本注入</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/tracylin/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/866872/20151227142938.png" alt=""/></a>    在《浏览器环境下JavaScript脚本加载与执行探析之defer与async特性》中，我们研究了延迟脚本(defer)和异步脚本(async)的执行时机、浏览器支持情况、浏览器bug以及其他的细节问题。而除了defer和async特性，动态脚本和Ajax脚本注入也是两种常用的创建无阻塞脚本的方法。... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/tracylin/" class="lightblue">TracyLin</a> 
+    发布于 2016-01-19 01:51 
+    <span class="article_comment"><a href="http://www.cnblogs.com/tracylin/p/5137980.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/tracylin/p/5137980.html" class="gray">阅读(104)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('QG-whz',5140930,205933,1)"> 
+	<span class="diggnum" id="digg_count_5140930">1</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140930" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/QG-whz/p/5140930.html" target="_blank">细说new与malloc的10点区别</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/QG-whz/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/610439/20151210143838.png" alt=""/></a>    前言几个星期前去面试C++研发的实习岗位，面试官问了个问题： new与malloc有什么区别？这是个老生常谈的问题。当时我回答new从自由存储区上分配内存，malloc从堆上分配内存；new/delete会调用构造函数/析构函数对对象进行初始化与销毁；operator new/delete可以进行.... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/QG-whz/" class="lightblue">melonstreet</a> 
+    发布于 2016-01-19 01:27 
+    <span class="article_comment"><a href="http://www.cnblogs.com/QG-whz/p/5140930.html#commentform" title="2016-01-19 09:12" class="gray">
+        评论(3)</a></span><span class="article_view"><a href="http://www.cnblogs.com/QG-whz/p/5140930.html" class="gray">阅读(131)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('onepixel',5140944,256889,1)"> 
+	<span class="diggnum" id="digg_count_5140944">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140944" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/onepixel/p/5140944.html" target="_blank">JavaScript基础：数据类型的中的那些少见多怪</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/onepixel/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/849589/20151205235751.png" alt=""/></a>    Javascript共有6种数据类型，其中包括3个基本数据类型(String,Number,Boolean)、2个特殊数据类型(Undefined,Null) 和 1个引用类型 (Object) 。本篇文章将对这6种数据类型一一进行讲解，以加深对这些基础概念的理解和应用。 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/onepixel/" class="lightblue">一像素</a> 
+    发布于 2016-01-19 01:14 
+    <span class="article_comment"><a href="http://www.cnblogs.com/onepixel/p/5140944.html#commentform" title="2016-01-19 09:12" class="gray">
+        评论(2)</a></span><span class="article_view"><a href="http://www.cnblogs.com/onepixel/p/5140944.html" class="gray">阅读(81)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('jacklu',5140913,213504,1)"> 
+	<span class="diggnum" id="digg_count_5140913">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140913" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/jacklu/p/5140913.html" target="_blank">经典功率谱估计及Matlab仿真</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/jacklu/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/718161/20160119004554.png" alt=""/></a>    原文出自：http://www.cnblogs.com/jacklu/p/5140913.html功率谱估计在分析平稳各态遍历随机信号频率成分领域被广泛使用，并且已被成功应用到雷达信号处理、故障诊断等实际工程中。本文给出了经典功率谱估计的几类方法，并通过Matlab的实验仿真对经典功率谱估计方法性能... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/jacklu/" class="lightblue">lulujianjie</a> 
+    发布于 2016-01-19 00:32 
+    <span class="article_comment"><a href="http://www.cnblogs.com/jacklu/p/5140913.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/jacklu/p/5140913.html" class="gray">阅读(24)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('yuuyuu',5140875,184676,1)"> 
+	<span class="diggnum" id="digg_count_5140875">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140875" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/yuuyuu/p/5140875.html" target="_blank">linux线程同步(2)-条件变量</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/yuuyuu/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/629717/20150813215332.png" alt=""/></a>    一.概述 上一篇，介绍了互斥量。条件变量与互斥量不同，互斥量是防止多线程同时访问共享的互斥变量来保护临界区。条件变量是多线程间可以通过它来告知其他线程某个状态发生了改变，让等待在这个条件变量的线程继续执行。通俗一点来讲：设置一个条件变量让线程1等待在一... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/yuuyuu/" class="lightblue">yuuyuu</a> 
+    发布于 2016-01-18 23:56 
+    <span class="article_comment"><a href="http://www.cnblogs.com/yuuyuu/p/5140875.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/yuuyuu/p/5140875.html" class="gray">阅读(23)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('figozhg',5140832,252476,1)"> 
+	<span class="diggnum" id="digg_count_5140832">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140832" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/figozhg/p/5140832.html" target="_blank">KOTLIN开发语言文档（官方文档） -- 2.基本概念</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/figozhg/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/831804/20151125214716.png" alt=""/></a>    KOTLIN开发语言文档（官方文档）第二章、基本概念 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/figozhg/" class="lightblue">figozhg</a> 
+    发布于 2016-01-18 23:34 
+    <span class="article_comment"><a href="http://www.cnblogs.com/figozhg/p/5140832.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/figozhg/p/5140832.html" class="gray">阅读(40)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('polobymulberry',5131983,212521,1)"> 
+	<span class="diggnum" id="digg_count_5131983">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5131983" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/polobymulberry/p/5131983.html" target="_blank">【原】AFNetworking源码阅读（二）</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/polobymulberry/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/715314/20150825200934.png" alt=""/></a>    【原】AFNetworking源码阅读（二）本文转载请注明出处 —— polobymulberry-博客园1. 前言上一篇中我们在iOS Example代码中提到了AFHTTPSessionManager中的一个函数：- (nullable NSURLSessionDataTask *)GET:(N... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/polobymulberry/" class="lightblue">桑果</a> 
+    发布于 2016-01-18 23:20 
+    <span class="article_comment"><a href="http://www.cnblogs.com/polobymulberry/p/5131983.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/polobymulberry/p/5131983.html" class="gray">阅读(47)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('fengzheng',5055388,83566,1)"> 
+	<span class="diggnum" id="digg_count_5055388">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5055388" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/fengzheng/p/5055388.html" target="_blank">用java开发微信公众号：接收和被动回复普通消息（三）</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/fengzheng/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/273364/20140311104117.png" alt=""/></a>    上篇说完了如何接入微信公众号，本文说一下微信公众号的最基本功能：普通消息的接收和回复。说到普通消息，那么什么是微信公众号所定义的普通消息呢，微信开发者文档中提到的接收的普通消息包括如下几类：1.文本消息2.图片消息3.语音消息4.视频消息5.小视频消息6.地理位置消息7.链接消息（被动回复的消息）被... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/fengzheng/" class="lightblue">风的姿态</a> 
+    发布于 2016-01-18 22:34 
+    <span class="article_comment"><a href="http://www.cnblogs.com/fengzheng/p/5055388.html#commentform" title="2016-01-19 09:06" class="gray">
+        评论(4)</a></span><span class="article_view"><a href="http://www.cnblogs.com/fengzheng/p/5055388.html" class="gray">阅读(119)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('CreateMyself',5140311,178061,1)"> 
+	<span class="diggnum" id="digg_count_5140311">1</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140311" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/CreateMyself/p/5140311.html" target="_blank">重置EntityFramework数据迁移到洁净状态</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/CreateMyself/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/589642/20150802211721.png" alt=""/></a>    前言翻译一篇有关EF数据迁移的文章，以备日后所用，文章若有翻译不当的地方请指出，将就点看，废话少说，看话题。【注意】：文章非一字一句的翻译，就重要的问题进行解释并解决。话题引入无法确定这种场景是否是大家也遇见过并且是频繁出现的，这种场景通常出现在需要对大量的数据进行迁移，导致EF数据迁移使得EF迁移... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/CreateMyself/" class="lightblue">Recluse_Xpy</a> 
+    发布于 2016-01-18 22:17 
+    <span class="article_comment"><a href="http://www.cnblogs.com/CreateMyself/p/5140311.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/CreateMyself/p/5140311.html" class="gray">阅读(174)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('qifengshi',5056468,259275,1)"> 
+	<span class="diggnum" id="digg_count_5056468">1</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5056468" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/qifengshi/p/5056468.html" target="_blank">android 中listview之BaseAdapter的使用</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/qifengshi/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/859903/20160111204443.png" alt=""/></a>    Listview控件不像其他安卓控件那种直接拖拽到界面上就能用，而是采用类似J2EE中的MVC模型的方式使用，需要通过适配器将某种样式的数据或控件添加到其上而使用.MVC模型实现原理是 数据模型M（Model） 存放数据，利用控制器C （Controller）将数据显示在视图V （View）上。利用... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/qifengshi/" class="lightblue">石小峰</a> 
+    发布于 2016-01-18 22:14 
+    <span class="article_comment"><a href="http://www.cnblogs.com/qifengshi/p/5056468.html#commentform" title="2016-01-18 22:22" class="gray">
+        评论(1)</a></span><span class="article_view"><a href="http://www.cnblogs.com/qifengshi/p/5056468.html" class="gray">阅读(101)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('xiaofeixiang',5140673,141251,1)"> 
+	<span class="diggnum" id="digg_count_5140673">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140673" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/xiaofeixiang/p/5140673.html" target="_blank">NodeJS-图片上传(Express)</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/xiaofeixiang/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/485855/20140824172432.png" alt=""/></a>    文件上传是每个网站不可避免的，最近需要做些上传图片的功能，主要解决两个问题，一个是文件上传样式和服务端路径保存，功能很简单，做起来倒是没那么简单，先从最简单的页面的上传页面的样式开始。页面样式Html页面默认的上传的是比较难看的，需要重做一个背景图片，通过背景图片添加上传的图片:上传图片样式: ..... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/xiaofeixiang/" class="lightblue">Fly_Elephant</a> 
+    发布于 2016-01-18 22:13 
+    <span class="article_comment"><a href="http://www.cnblogs.com/xiaofeixiang/p/5140673.html#commentform" title="" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="http://www.cnblogs.com/xiaofeixiang/p/5140673.html" class="gray">阅读(119)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('p2227',5140585,174433,1)"> 
+	<span class="diggnum" id="digg_count_5140585">0</span>
+	</div>
+	<div class="clear"></div>
+	<div id="digg_tip_5140585" class="digg_tip"></div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="http://www.cnblogs.com/p2227/p/5140585.html" target="_blank">初用react容易踩的坑</a></h3>               	
+    <p class="post_item_summary">
+<a href="http://www.cnblogs.com/p2227/" target="_blank"><img width="48" height="48" class="pfs" src="http://pic.cnblogs.com/face/84053/20140202151105.png" alt=""/></a>    此文章同步连接： https://github.com/p2227/p2227.github.io/issues/3# 初用react容易踩的坑## 自定义组件忘记大写第一个字母 ```javascriptvar myComp = React.createClass({ render: funct.... 
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="http://www.cnblogs.com/p2227/" class="lightblue">p2227</a> 
+    发布于 2016-01-18 21:42 
+    <span class="article_comment"><a href="http://www.cnblogs.com/p2227/p/5140585.html#commentform" title="2016-01-19 00:32" class="gray">
+        评论(4)</a></span><span class="article_view"><a href="http://www.cnblogs.com/p2227/p/5140585.html" class="gray">阅读(113)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+   
+
+            </div>
+            <script>editorPickStat();aggSite.user.getUserInfo();</script>
+            <script type="text/javascript">
+                var aggSiteModel = {"CategoryType":"SiteHome","ParentCategoryId":0,"CategoryId":808,"PageIndex":1,"ItemListActionName":"PostList"};
+            </script>
+            <div id="pager_bottom"><div id="paging_block"><div class="pager"><a href="/" class="p_1 current" onclick="aggSite.loadCategoryPostList(1,20);buildPaging(1);return false;">1</a><a href="/sitehome/p/2" class="p_2" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">2</a><a href="/sitehome/p/3" class="p_3" onclick="aggSite.loadCategoryPostList(3,20);buildPaging(3);return false;">3</a><a href="/sitehome/p/4" class="p_4" onclick="aggSite.loadCategoryPostList(4,20);buildPaging(4);return false;">4</a><a href="/sitehome/p/5" class="p_5" onclick="aggSite.loadCategoryPostList(5,20);buildPaging(5);return false;">5</a><a href="/sitehome/p/6" class="p_6" onclick="aggSite.loadCategoryPostList(6,20);buildPaging(6);return false;">6</a><a href="/sitehome/p/7" class="p_7" onclick="aggSite.loadCategoryPostList(7,20);buildPaging(7);return false;">7</a><a href="/sitehome/p/8" class="p_8" onclick="aggSite.loadCategoryPostList(8,20);buildPaging(8);return false;">8</a><a href="/sitehome/p/9" class="p_9" onclick="aggSite.loadCategoryPostList(9,20);buildPaging(9);return false;">9</a><a href="/sitehome/p/10" class="p_10" onclick="aggSite.loadCategoryPostList(10,20);buildPaging(10);return false;">10</a><a href="/sitehome/p/11" class="p_11" onclick="aggSite.loadCategoryPostList(11,20);buildPaging(11);return false;">11</a>···<a href="/sitehome/p/200" class="p_200" onclick="aggSite.loadCategoryPostList(200,20);buildPaging(200);return false;">200</a><a href="/sitehome/p/2" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">Next &gt;</a></div></div><script type="text/javascript">var pagingBuider={"OnlyLinkText":false,"TotalCount":4000,"PageIndex":1,"PageSize":20,"ShowPageCount":5,"SkipCount":0,"UrlFormat":"/sitehome/p/{0}","OnlickJsFunc":"aggSite.loadCategoryPostList()","FirstPageLink":"/","AjaxUrl":"/mvc/ToolkitPaging/load.aspx","AjaxCallbak":null,"TopPagerId":"pager_top","IsRenderScript":true};function buildPaging(pageIndex){pagingBuider.PageIndex=pageIndex;$.ajax({url:pagingBuider.AjaxUrl,data:JSON.stringify(pagingBuider),type:'post',dataType:'text',contentType:'application/json; charset=utf-8',success:function (data) { $('#paging_block').html(data); var pagerTop=$('#pager_top');if(pageIndex>1){$(pagerTop).html(data).show();}else{$(pagerTop).hide();}}});}</script>
+</div>
+            <div id="side_nav">
+                
+<div id="cate_title_block">
+<div id="cate_title_title"><div class="cate_title">网站分类</div></div>
+<ul id="cate_item">
+<li id="cate_item_108698" onmouseover="cateShow(108698)" onmouseout="cateHidden(108698)">
+<a href="/cate/108698/">.NET技术(0)</a>
+</li>
+<li id="cate_item_2" onmouseover="cateShow(2)" onmouseout="cateHidden(2)">
+<a href="/cate/2/">编程语言(2)</a>
+</li>
+<li id="cate_item_108701" onmouseover="cateShow(108701)" onmouseout="cateHidden(108701)">
+<a href="/cate/108701/">软件设计(0)</a>
+</li>
+<li id="cate_item_108703" onmouseover="cateShow(108703)" onmouseout="cateHidden(108703)">
+<a href="/cate/108703/">Web前端(12)</a>
+</li>
+<li id="cate_item_108704" onmouseover="cateShow(108704)" onmouseout="cateHidden(108704)">
+<a href="/cate/108704/">企业信息化(0)</a>
+</li>
+<li id="cate_item_108705" onmouseover="cateShow(108705)" onmouseout="cateHidden(108705)">
+<a href="/cate/108705/">手机开发(0)</a>
+</li>
+<li id="cate_item_108709" onmouseover="cateShow(108709)" onmouseout="cateHidden(108709)">
+<a href="/cate/108709/">软件工程(2)</a>
+</li>
+<li id="cate_item_108712" onmouseover="cateShow(108712)" onmouseout="cateHidden(108712)">
+<a href="/cate/108712/">数据库技术(0)</a>
+</li>
+<li id="cate_item_108724" onmouseover="cateShow(108724)" onmouseout="cateHidden(108724)">
+<a href="/cate/108724/">操作系统(1)</a>
+</li>
+<li id="cate_item_4" onmouseover="cateShow(4)" onmouseout="cateHidden(4)">
+<a href="/cate/4/">其他分类(1)</a>
+</li>
+<li id="cate_item_0" onmouseover="cateShow(0)" onmouseout="cateHidden(0)">
+<a href="/cate/all/">所有随笔(95)</a>
+</li>
+<li id="cate_item_-1" onmouseover="cateShow(-1)" onmouseout="cateHidden(-1)">
+<a href="/comment/">所有评论(25)</a>
+</li>
+</ul>
+<div class="cate_bottom"></div>
+<div id="cate_sub_block"></div>
+<script type="text/javascript">var cateIdList = '108698,2,108701,108703,108704,108705,108709,108712,108724,4';aggSite.loadSubCategories();</script>
+</div>
+    <div class="l_s"></div>
+<p class="r_l_3"></p><p class="r_l_2"></p><p class="r_l_1"></p>
+<div class="w_l">
+<h4>链接</h4>        
+<ul>
+    <li><a href="http://space.cnblogs.com/forum/public" target="_blank">反馈或建议</a></li> 
+    <li><a href="http://www.cnblogs.com/cmt/" target="_blank">官方博客</a></li>
+    <li><a href="/skins.aspx" target="_blank">博客模板</a></li>
+    <li><a href="http://www.blogjava.net/">Java博客</a></li>
+    <li><a href="http://www.cppblog.com/">C++博客</a></li>
+    <li><a href="http://www.cnblogs.com/cmt/archive/2009/09/26/1574616.html">手机版</a></li>
+</ul>
+</div>
+<p class="r_l_1"></p><p class="r_l_2"></p><p class="r_l_3"></p>
+<div class="l_s"></div>
+<div id="user_stats"></div>
+<div class="l_s"></div>        
+<p class="r_l_3"></p><p class="r_l_2"></p><p class="r_l_1"></p>
+<div class="w_l">                
+<h4>统计信息</h4>
+<div id="site_stats"></div>      
+</div>
+<p class="r_l_1"></p><p class="r_l_2"></p><p class="r_l_3"></p>
+
+            </div>
+            <div id="side_right">
+                    <div id="search_block">
+                        <div class="side_search">
+                            <input type="text" id="zzk_q" class="search_input" onkeydown="return zzk_go_enter(event);" tabindex="3" /><input onclick="zzk_go()" type="button" class="search_btn" value="找找看" />
+                        </div>
+                        <div id="google_search" class="side_search">
+                            <input type="text" id="google_search_q" class="search_input" onkeydown="return google_search_enter(event);" /><input type="button" value="Google" class="search_btn" onclick="return google_search();" />
+                        </div>
+                    </div>
+                <div id="banner_right"></div>
+                <script>getAdA1();</script>
+                <div id="ad_b1" class="ad_right"></div>
+                <script>getAdB1();</script>
+                <div id="ad_right_text" class="ad_right_text"></div>
+                <div id="side_right_block"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer_block">
+                <p class="r_b_3"></p><p class="r_b_2"></p><p class="r_b_1"></p><div id="friend_link">
+站内导航：<a href="http://zzk.cnblogs.com">找找看</a><a href="http://kb.cnblogs.com">知识库</a><a href="http://job.cnblogs.com">程序员招聘</a><a href="http://job.cnblogs.com/cate-.net/" target="_blank">.NET招聘</a><a href="http://job.cnblogs.com/cate-java_programmer/" target="_blank">Java招聘</a><a href="http://job.cnblogs.com/cate-cpp_programmer/" target="_blank">C++招聘</a><a href="http://job.cnblogs.com/cate-php_programmer/" target="_blank">PHP招聘</a><a href="http://job.cnblogs.com/cate-front_end_engineer/" target="_blank">Web前端招聘</a><br />
+友情连接：<a href="http://click.aliyun.com/m/994/" target="_blank"><img src="http://img.cnblogs.com/friend_links/logo_aliyun.jpg" alt="阿里云" /></a><a href="http://www.hujiang.com" target="_blank">沪江网</a><a href="http://www.chinaz.com/" target="_blank">站长之家</a><a href="http://dev.yesky.com" target="_blank">天极网</a><a href="http://down.admin5.com" target="_blank">A5源码下载</a><a href="http://www.gcpowertools.com.cn" target="_blank">葡萄城控件</a><a href="https://www.upyun.com/?md=cnblogs" target="_blank">又拍云存储</a><a href="http://gaokao.xdf.cn/" target="_blank">高考查分</a><a href="http://zt.cnblogs.com/tingyun/" target="_blank">听云APP</a><a href="http://www.rongcloud.cn/" target="_blank">融云IM云</a><a href="https://www.jpush.cn/" target="_blank">极光推送</a><a href="https://worktile.com/" target="_blank">Worktile</a>
+</div><p class="r_b_1"></p><p class="r_b_2"></p><p class="r_b_3"></p>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div><a href="/AboutUS.aspx">关于博客园</a><a href="/ContactUs.aspx">联系我们</a>&copy;2004-2016<a href="http://www.cnblogs.com/">博客园</a>保留所有权利<a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备09004260号</a></div>
+            <div><a href="https://ss.knet.cn/verifyseal.dll?sn=e131108110100433392itm000000&amp;ct=df&amp;a=1&amp;pa=0.25787803245785335" rel="nofollow" target="_blank"><img id="cnnic_img" src="http://static.cnblogs.com/images/cnnic.png" alt="" width="64" height="23" /></a><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502001144" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://static.cnblogs.com/images/ghs.png" alt=""/><span style="float:left;height:20px;line-height:20px;margin: 0 5px 0 5px; color:#939393;">沪公网安备 31011502001144号</span></a></div>
+        </div>
+    </div>
+</body>
+</html>
+
